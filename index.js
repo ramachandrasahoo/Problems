@@ -1,15 +1,16 @@
-// What is a prime number?
-function isPrime(number) {
-    if (number <= 1  ) {
-        return `${number} is not a prime number`
+// Write a function that takes a number and returns its reverse.
+
+function reversenumber(num) {
+    if (typeof num !== "number") {
+        throw new Error ("Enter a number");
     }
-    for (i = 2 ; i < number ; i++) {
-        if (number % i === 0) {
-            return `${number} is not prime`
-        }
+    let newstring = num.toString();
+    let newnum = "";
+    console.log(newstring);
+    for (let i = newstring.length - 1; i >=0; i-- ) {
+        newnum += newstring[i];
     }
-    return `${number} is prime`
+    return Number(newnum) ;
 }
 
-console.log(isPrime(84));
-
+console.log(reversenumber(837562857));
