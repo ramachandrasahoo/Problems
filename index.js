@@ -10,7 +10,7 @@ function reversenumber(num) {
     for (let i = newstring.length - 1; i >=0; i-- ) {
         newnum += newstring[i];
     }
-    return Number(newnum) ;
+    return Number(newnum) === num
 }
 
-console.log(reversenumber(837562857));
+console.log(reversenumber(1321));
