@@ -14,3 +14,14 @@ function reversenumber(num) {
 }
 
 console.log(reversenumber(1321));
+
+// Factorial of a number
+
+// Fibonacci sequence
+
+// Sum of digits
+
+// Count digits
+
+// Check if a number is an Armstrong number
+
