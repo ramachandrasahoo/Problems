@@ -1,14 +1,15 @@
-//  Check if a year is a leap year next?
-
-function isLeapYear(year) {
-    if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
-        return `${year} is a leap year`;
-    } else {
-        return `${year} is not a leap year`;
+// What is a prime number?
+function isPrime(number) {
+    if (number <= 1  ) {
+        return `${number} is not a prime number`
     }
+    for (i = 2 ; i < number ; i++) {
+        if (number % i === 0) {
+            return `${number} is not prime`
+        }
+    }
+    return `${number} is prime`
 }
 
-console.log(isLeapYear(1184));
-
-
+console.log(isPrime(84));
 
