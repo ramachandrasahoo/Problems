@@ -1,21 +1,14 @@
-// Check if a number is positive, negative, or zero
-// Want to try that one?
-function checknum(num) {
-    if (num > 0){
-        return `${num} is positive`
-    }
-    else if (num < 0){
-        return `${num} is negative`
-    }
-    else if (num == 0){
-        return `it is ${num} `
+//  Check if a year is a leap year next?
+
+function isLeapYear(year) {
+    if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+        return `${year} is a leap year`;
+    } else {
+        return `${year} is not a leap year`;
     }
 }
 
-console.log(checknum(1.4));
-
-
-
+console.log(isLeapYear(1184));
 
 
 
