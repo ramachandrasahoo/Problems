@@ -72,7 +72,28 @@ num.forEach(function(val) {
 // Create a new array of lengths of each word in a string array.
 let names = ["rama", "banamali", "payal", "chiku", "miku", "sai", "rupali", "mamali"];
 let nameslength = [];
+// names.forEach(function(val){
+//     nameslength.push(val.length)
+// });
+// console.log(nameslength);
+
+// From an array of names, print only those names that have more than 5 characters using forEach.
+
 names.forEach(function(val){
-    nameslength.push(val.length)
+    if (val.length > 5) {
+        nameslength.push(val);
+    }
 });
 // console.log(nameslength);
+
+// From an array of strings, print only those which contain the letter 'a'.
+
+let people = ["rama", "banamali", "payal", "chiku", "miku", "sai", "rupali", "mamali"];
+let peopleA = [];
+people.forEach(function(val){
+    if (val.includes("a")) {
+        peopleA.push(val);
+    }
+});
+// console.log(peopleA);
+
