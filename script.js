@@ -70,3 +70,9 @@ num.forEach(function(val) {
 });
 // console.log(count);
 // Create a new array of lengths of each word in a string array.
+let names = ["rama", "banamali", "payal", "chiku", "miku", "sai", "rupali", "mamali"];
+let nameslength = [];
+names.forEach(function(val){
+    nameslength.push(val.length)
+});
+// console.log(nameslength);
