@@ -97,3 +97,12 @@ people.forEach(function(val){
 });
 // console.log(peopleA);
 
+// From an array of names, print only those that end with the letter "i".
+let peopleb = [];
+people.forEach(function(val){
+    if (val.charAt(val.length - 1) === "i") {
+        peopleb.push(val);
+    }
+});
+
+console.log(peopleb);
